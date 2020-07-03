@@ -1,0 +1,245 @@
+/*
+Theme Name: MATHE
+Theme URI: N/A
+Author: Nate Hicks & Eric Barber
+Author URI: http://tincture.design
+Description: This is a custom template created for MATHE
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom
+Text Domain: mathe
+*/
+
+/* HEADER */
+.container-extended {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #FFFFFF;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: none;
+}
+nav .nav-wrapper #nav-mobile li a {
+  color: #30336B;
+  font-size: 12px;
+}
+nav a {
+  color: #30336B;
+  font-family: Helvetica, Arial, serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+nav .social_links ul a {
+  line-height: 80px;
+}
+nav .social_links ul a:hover {
+  background-color: transparent;
+}
+nav .brand-logo {
+  height: 80px;
+  line-height: 80px;
+}
+nav .brand-logo img {
+  filter: invert(30%) grayscale(100%) brightness(60%) contrast(4);
+  vertical-align: middle;
+  width: 150px;
+}
+
+/* FOOTER */
+.footer {
+  overflow: auto;
+  padding: 0px 40px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #323370;
+}
+.footer .row {
+  margin-bottom: 0px;
+}
+.footer .row:first-child {
+  margin-top: 20px;
+}
+.footer .address {
+  margin-top: 10px;
+}
+.footer a {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 300;
+}
+.footer ul li a .fa {
+  padding-right: 20px;
+}
+.footer .newsletter .input-wrapper {
+  width: 80%;
+  float: left;
+}
+.footer .newsletter .input-wrapper input {
+  margin-bottom: 0px;
+  height: 2.65rem;
+  color: white;
+  border: 1px solid white;
+  border-right: 0px;
+  padding-left: 20px;
+  border-radius: 10px 0px 0px 10px;
+}
+.footer .newsletter .btn-wrapper {
+  width: 20%;
+  float: left;
+}
+.footer .newsletter .btn-wrapper .btn {
+  padding: 3px 15px;
+  color: black;
+  background-color: white;
+  border-radius: 0px 10px 10px 0px;
+  height: 2.8rem;
+}
+
+/* BODY */
+body {
+  background-color: #dbf3ff;
+  background-image: -webkit-linear-gradient(105deg, #dbf3ff 70%, white 50%);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.cursive {
+  font-family: "Abril Fatface", cursive;
+  color: #30336B;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row.full {
+  height: 90vh;
+  margin-bottom: 0px;
+}
+.row.full img {
+  max-width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.flex__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.homepage {
+  background-color: #dbf3ff;
+  background-image: -webkit-linear-gradient(105deg, #dbf3ff 70%, white 50%);
+}
+.homepage h4 + p {
+  margin-top: 0px;
+}
+.homepage .container {
+  overflow: auto;
+}
+
+.services main ul {
+  list-style-type: circle;
+  padding-left: 25px;
+}
+.services main ul li {
+  list-style-type: circle;
+}
+
+.about .card {
+  width: 150px;
+}
+.about .card .card-title {
+  font-size: 12px;
+}
+.about .card .card-content {
+  position: relative;
+}
+.about .card i {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.about .card i.right {
+  margin-left: 0px;
+}
+.about .card img {
+  height: 150px;
+  width: 150px;
+}
+
+.support h5, .support h4, .support h6 {
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  overflow: auto;
+  padding: 0px 40px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #323370;
+}
+.footer .row {
+  margin-bottom: 0px;
+}
+.footer .row:first-child {
+  margin-top: 20px;
+}
+.footer .address {
+  margin-top: 10px;
+}
+.footer a {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 300;
+}
+.footer ul li a .fa {
+  padding-right: 20px;
+}
+.footer .newsletter .input-wrapper {
+  width: 80%;
+  float: left;
+}
+.footer .newsletter .input-wrapper input {
+  margin-bottom: 0px;
+  height: 2.65rem;
+  color: white;
+  border: 1px solid white;
+  border-right: 0px;
+  padding-left: 20px;
+  border-radius: 10px 0px 0px 10px;
+}
+.footer .newsletter .btn-wrapper {
+  width: 20%;
+  float: left;
+}
+.footer .newsletter .btn-wrapper .btn {
+  padding: 3px 15px;
+  color: black;
+  background-color: white;
+  border-radius: 0px 10px 10px 0px;
+  height: 2.8rem;
+}
