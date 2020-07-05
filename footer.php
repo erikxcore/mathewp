@@ -2,7 +2,7 @@
 <footer class="footer">
     <div class="full-container">
     	<div class="row">
-    		<div class="col s6 m5 l2 offset-m1 offset-l1 flex-center">
+    		<div class="col s6 m5 l2 offset-m1 offset-l2 flex-center">
     			<ul>
     				<li><a href="about.html">About Us</a></li>
     				<li><a href="contact.html">Contact</a></li>
@@ -21,7 +21,7 @@
     			<form class="newsletter">
 				    <div class="input-field">
 				      <div class="input-wrapper">
-				        <input class="validate" type="email">
+				        <input class="validate" type="email" placeholder="Email Address" required>
 				      </div>
                       <div class="btn-wrapper">
     				      <div class="btn">
@@ -35,14 +35,15 @@
             </div>
     		<div class="col s12 m5 l2 offset-m1 flex-center">
                 <div class="address">
-        			<span>1259 Rt 46E Parsippany, NJ 07054</span>
+        			<span>181 New road, Suite 304</span><br/>
+                    <span>Parsippany, NJ 07054</span><br/>
         			<span><a href="tel:9733341700">(973)334-1700</a></span>
         			<span><a href="mailto:support@mathe.com">support@mathe.com</a></span>
                 </div>
     		</div>
     	</div>
         <div class="row">
-            <div class="col s6 m5 l2 offset-m1 offset-l1">
+            <div class="col s6 m5 l2">
                 <p class="copyright">© Mathe, Inc. 2020</p>
             </div>
         </div>

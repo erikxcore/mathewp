@@ -3,13 +3,48 @@ Theme Name: MATHE
 Theme URI: N/A
 Author: Nate Hicks & Eric Barber
 Author URI: http://tincture.design
-Description: This is a custom template created for MATHE
+Description: This is a custom template created for MATHE, Inc.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom
-Text Domain: mathe
+Text Domain: mathe 
 */
+
+@font-face {
+  font-family: AvenirNextRegular;  
+  src: url('https://beta.mathe.com/wp-content/themes/mathepub2/fonts/AvenirNext-Regular.woff');  
+  font-weight: normal;  
+}
+
+@font-face {
+  font-family: AvenirNextBold;  
+  src: url('https://beta.mathe.com/wp-content/themes/mathepub2/fonts/AvenirNext-Bold.woff');  
+  font-weight: bold;  
+}
+
+@font-face {
+  font-family: AvenirNextItalic;  
+  src: url('https://beta.mathe.com/wp-content/themes/mathepub2/fonts/AvenirNext-Italic.woff');  
+  font-weight: normal;  
+}
+
+@font-face {
+  font-family: AvenirNextMedium;  
+  src: url('https://beta.mathe.com/wp-content/themes/mathepub2/fonts/AvenirNext-Medium.woff');  
+  font-weight: normal;  
+}
+
+@font-face {
+  font-family: AvenirNextUltraLight;  
+  src: url('https://beta.mathe.com/wp-content/themes/mathepub2/fonts/AvenirNext-UltraLight.woff');  
+  font-weight: normal;  
+}
+
+
+body{
+  font-family: AvenirNextRegular;
+}
 
 /* HEADER */
 .container-extended {
@@ -18,21 +53,24 @@ Text Domain: mathe
 }
 
 nav {
-  background-color: #FFFFFF;
+  /*
+  background: linear-gradient(180deg, rgba(10,61,98,1) 0%, rgba(10,61,98,0) 100%);
+  */
+  background:  transparent;
   height: 80px;
   line-height: 80px;
   box-shadow: none;
 }
 nav .nav-wrapper #nav-mobile li a {
-  color: #30336B;
-  font-size: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: AvenirNextUltraLight;
 }
 nav a {
-  color: #30336B;
+  color: #ffffff;
   font-family: Helvetica, Arial, serif;
-  font-weight: 500;
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: 16px;
+  font-family: AvenirNextUltraLight;
 }
 nav .social_links ul a {
   line-height: 80px;
@@ -45,67 +83,20 @@ nav .brand-logo {
   line-height: 80px;
 }
 nav .brand-logo img {
+  /*
   filter: invert(30%) grayscale(100%) brightness(60%) contrast(4);
-  vertical-align: middle;
   width: 150px;
+  */
+  vertical-align: middle;
 }
 
-/* FOOTER */
-.footer {
-  overflow: auto;
-  padding: 0px 40px;
-  width: 100%;
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: 300;
-  background-color: #323370;
-}
-.footer .row {
-  margin-bottom: 0px;
-}
-.footer .row:first-child {
-  margin-top: 20px;
-}
-.footer .address {
-  margin-top: 10px;
-}
-.footer a {
-  color: #FFFFFF;
-  font-size: 12px;
-  font-weight: 300;
-}
-.footer ul li a .fa {
-  padding-right: 20px;
-}
-.footer .newsletter .input-wrapper {
-  width: 80%;
-  float: left;
-}
-.footer .newsletter .input-wrapper input {
-  margin-bottom: 0px;
-  height: 2.65rem;
-  color: white;
-  border: 1px solid white;
-  border-right: 0px;
-  padding-left: 20px;
-  border-radius: 10px 0px 0px 10px;
-}
-.footer .newsletter .btn-wrapper {
-  width: 20%;
-  float: left;
-}
-.footer .newsletter .btn-wrapper .btn {
-  padding: 3px 15px;
-  color: black;
-  background-color: white;
-  border-radius: 0px 10px 10px 0px;
-  height: 2.8rem;
-}
 
 /* BODY */
 body {
+  /*
   background-color: #dbf3ff;
   background-image: -webkit-linear-gradient(105deg, #dbf3ff 70%, white 50%);
+  */
 }
 
 body {
@@ -147,6 +138,7 @@ main {
   height: 100%;
 }
 
+/*
 .homepage {
   background-color: #dbf3ff;
   background-image: -webkit-linear-gradient(105deg, #dbf3ff 70%, white 50%);
@@ -192,6 +184,8 @@ main {
   text-align: center;
 }
 
+*/
+
 /* FOOTER */
 .footer {
   overflow: auto;
@@ -200,8 +194,15 @@ main {
   color: #FFFFFF;
   font-size: 12px;
   font-weight: 300;
-  background-color: #323370;
+  background-color: #279cd8;
+  min-height: 150px;
+  font-family: AvenirNextUltraLight;
 }
+
+.footer .full-container{
+  padding:  20px 0px;
+}
+
 .footer .row {
   margin-bottom: 0px;
 }
@@ -216,8 +217,24 @@ main {
   font-size: 12px;
   font-weight: 300;
 }
+
+.footer .newsletter{
+  width:  100%;
+}
+
+.footer h6{
+  margin-top:  0px;
+  font-size:  1.05rem;
+}
+
+.footer ul{
+  margin-top:  0px;
+  padding-top:  0px;
+}
 .footer ul li a .fa {
   padding-right: 20px;
+  height: 16px;
+  width:  16px;
 }
 .footer .newsletter .input-wrapper {
   width: 80%;
@@ -230,8 +247,14 @@ main {
   border: 1px solid white;
   border-right: 0px;
   padding-left: 20px;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 5px 0px 0px 5px;
+  font-size: 12px;
 }
+
+.footer .newsletter .input-wrapper input::placeholder{
+  color:  white;
+}
+
 .footer .newsletter .btn-wrapper {
   width: 20%;
   float: left;
@@ -240,6 +263,54 @@ main {
   padding: 3px 15px;
   color: black;
   background-color: white;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 5px 5px 0px;
   height: 2.8rem;
+  font-family: AvenirNextRegular;
+  font-size: 12px;
 }
+
+/* PAGE SPECIFIC */
+
+.homepage main{
+  margin-top:  -120px;
+}
+
+.homepage main .hero{
+    padding-top: 200px;
+    min-height: 130vh;
+    min-width: 130vw;
+    background: linear-gradient(180deg, rgba(10,61,98,1) 0%, rgba(10,61,98,0) 100%),url('https://beta.mathe.com/wp-content/themes/mathepub2/images/heroImage.png');
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    border-bottom: 30px solid #aedef5;
+    margin-left: -15vw;
+}
+
+.homepage main .hero h2{
+    font-family: AvenirNextBold;
+    color:  white;
+}
+
+.homepage main .hero a.btn-large{
+  background-color: #f69915;
+}
+
+.homepage main .hero .content{
+  max-width: 800px; /* Should use media queries and percentages rather than PX */
+  margin: 0 auto;
+}
+
+@media(max-width: 800px){
+  .homepage main .hero .content{
+    max-width:  90vw;
+  }
+}
+
+.solutions-detail{
+  background: #279cd8;
+}
+
+/* .hero-border{
+  min-height:  100px;
+  background:  white;
+} */

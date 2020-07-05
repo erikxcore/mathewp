@@ -53,33 +53,23 @@
     <nav class="nav-extended">
 	<div class="nav-wrapper">
 	 <div class="container-extended">
-		  <a href="index.html" class="brand-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/matheLogo.png"></a>
+		  <a href="/" class="brand-logo"><img src="<?php echo get_template_directory_uri(); ?>/matheLogos/matheLogoNav.png"></a>
      	  <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		  <ul id="nav-mobile" class="right hide-on-med-and-down">
-		    <li class="link--about">
-		    	<a href="/about">About</a>
+		    <li class="link--support">
+		    	<a href="/support">Support</a>
 		    </li>
 		    <li class="link--services">
 		    	<a href="/services">Services</a>
 		    </li>
-		    <li class="link--support">
-		    	<a href="/support">Support</a>
+		    <li class="link--resources">
+		    	<a href="/resources">Resources</a>
 		    </li>
-		    <li class="link--testimonials">
-		    	<a href="/testimonials">Testimonials</a>
-		    </li>
-		    <li class="link--blog">
-		    	<a href="/blog">Blog</a>
+		    <li class="link--about">
+		    	<a href="/about">About Us</a>
 		    </li>
 		    <li class="link--contact">
 		    	<a href="/contact">Contact</a>
-		    </li>
-		    <li class="social_links">
-		    	<ul>
-		    		<li><a href="#" class="fa fa-facebook"></a></li>
-		    		<li><a href="#" class="fa fa-linkedin"></a></li>
-		    		<li><a href="#" class="fa fa-twitter"></a></li>
-		    	</ul>
 		    </li>
 		  </ul>
 		</div>
@@ -87,11 +77,10 @@
 </nav>
 
 <ul class="sidenav" id="mobile-menu">
-	<li><a href="/about">About</a></li>
-	<li><a href="/services">Services</a></li>
 	<li><a href="/support">Support</a></li>
-	<li><a href="/testimonials">Testimonials</a></li>
-	<li><a href="/blog">Blog</a></li>
+	<li><a href="/services">Services</a></li>
+	<li><a href="/resources">Resources</a></li>
+	<li><a href="/about">About Us</a></li>
 	<li><a href="/contact">Contact</a></li>
 	<li class="social_links">
 		<ul>
