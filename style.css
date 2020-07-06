@@ -271,6 +271,10 @@ main {
 
 /* PAGE SPECIFIC */
 
+.homepage .full-container{
+  overflow: hidden;
+}
+
 .homepage main{
   margin-top:  -120px;
 }
@@ -278,12 +282,24 @@ main {
 .homepage main .hero{
     padding-top: 200px;
     min-height: 130vh;
-    min-width: 130vw;
+    min-width: 150vw;
     background: linear-gradient(180deg, rgba(10,61,98,1) 0%, rgba(10,61,98,0) 100%),url('https://beta.mathe.com/wp-content/themes/mathepub2/images/heroImage.png');
     border-bottom-left-radius: 70%;
     border-bottom-right-radius: 70%;
     border-bottom: 30px solid #aedef5;
-    margin-left: -15vw;
+    margin-left: -25vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 1200px){
+  .homepage main .hero{
+    min-height: 110vh;
+    min-width: 150vw;
+    margin-left:  -25vw;
+  }
 }
 
 .homepage main .hero h2{
@@ -298,6 +314,7 @@ main {
 .homepage main .hero .content{
   max-width: 800px; /* Should use media queries and percentages rather than PX */
   margin: 0 auto;
+  margin-top:  -350px;
 }
 
 @media(max-width: 800px){
@@ -308,9 +325,336 @@ main {
 
 .solutions-detail{
   background: #279cd8;
+  padding:  40px 0px;
 }
 
-/* .hero-border{
-  min-height:  100px;
-  background:  white;
+.solutions-header{
+  padding-top: 25px;
+}
+
+.solutions-header h4{
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: AvenirNextBold;
+    color: #279cd8;
+    margin: 0px;
+}
+
+.solutions-detail h3{
+    font-family: AvenirNextUltraLight;
+    color: white;
+    font-size: 2.0rem;
+    padding: 0px;
+    margin:  0px;
+    margin-bottom:  20px;
+}
+
+.solutions-detail p{
+    font-family: AvenirNextUltraLight;
+    color: white;
+    margin-bottom:  0px;
+    padding-bottom:  0px;
+}
+
+/* .solutions-detail{
+  padding:  20px 0px;
 } */
+
+.solutions-detail .col.s6:nth-of-type(2){
+  padding-left: 0px;
+  border-left: 0.1rem solid white;
+  padding: 0 0.65rem;
+  display: flex;
+  justify-content: center;
+}
+
+.solutions-detail ul li{
+  color:  white;
+  list-style-type:  disc;
+}
+
+.solutions-detail ul {
+  padding-left:  40px;
+}
+
+.solutions-detail .row{
+  padding-bottom:  0px;
+  margin-bottom:  0px;
+}
+
+.full-container.solutions-detail{
+  overflow:  visible;
+}
+
+.solutions-detail .col.s6:nth-of-type(1){
+  position:  relative;
+}
+
+.solutions-detail .col.s6:nth-of-type(1)::before{
+    position: absolute;
+    top: -60px;
+    left:  calc(50% - 15px);
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #279cd8;
+}
+
+.whoarewedetails h1{
+  font-family: AvenirNextRegular;
+  text-align: center;
+  color: #454545;
+  font-size: 2rem;
+}
+
+.whoarewedetails .btn{
+  background-color: #f69915;
+}
+
+.whoarewedetails .col.s6:nth-of-type(1){
+  display:  flex;
+  align-items: center;
+  text-align: center;
+}
+
+.whoarewedetails .col.s6:nth-of-type(1) img{
+/*   max-width:  100%;
+  max-height:  100%; */
+  max-height: 150px;
+  margin:  0 auto;
+}
+
+.whoarewe{
+    min-height: 500px;
+    min-width: 150vw;
+    background: url('https://beta.mathe.com/wp-content/themes/mathepub2/images/whoAreWe.png');
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    border-bottom: 30px solid #aedef5;
+    margin-left: -25vw;
+    padding-left:  25vw;
+    margin-right: 25vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: bottom;
+}
+
+.whoarewedetails{
+  min-height:  500px;
+  margin-top:  -500px;
+}
+
+@media(min-width: 1200px){
+  .whoarewe{
+    min-height:  800px;
+  }
+
+  .whoarewedetails{
+    min-height:  800px;
+    margin-top:  -800px;
+  }
+}
+
+.featuredVideos h2{
+    text-align: center;
+    font-family: AvenirNextUltraLight;
+    font-size: 2.5rem;
+}
+
+.featuredVideos .col.s6{
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourPartners{
+  background-color: #f2f2f2;
+  padding:  10px 0px;
+}
+
+.ourPartners .col.s4{
+  text-align: center;
+}
+
+.ourPartners .col.s4 img{
+  max-width:  100%;
+}
+
+.ourPartners .container{
+  overflow:  hidden;
+}
+
+.ourPartners .swiper-button-next{
+    top: calc( 50% - 30px);
+}
+
+.ourPartners .swiper-button-prev{
+  top: calc( 50% - 30px);
+}
+
+.ourPartners .swiper-wrapper .row{
+  max-width:  90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourPartners h2{
+    text-align: center;
+    font-family: AvenirNextUltraLight;
+    font-size: 2.5rem;
+}
+
+.testimonialsbg{
+    min-height: 500px;
+    min-width: 150vw;
+    background: linear-gradient(180deg, rgba(10,61,98,0.8) 1%, rgba(10,61,98,0.5) 100%),url('https://beta.mathe.com/wp-content/themes/mathepub2/images/testimonialsBG.png');
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    margin-left: -25vw;
+    padding-left:  25vw;
+    margin-right: 25vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.testimonials{
+  margin-top:  -500px;
+  min-height:  500px;
+  position:  relative;
+}
+
+.testimonials h2{
+    text-align: center;
+    font-family: AvenirNextRegular;
+    font-size: 2.5rem;
+    color:  white;
+}
+
+.testimonials p{
+  font-family: AvenirNextUltraLight;
+  color: white;
+  font-size: 1.25rem;
+}
+
+@media(min-width: 1200px){
+  .testimonialsbg{
+    min-height:  600px;
+  }
+
+  .testimonials{
+    min-height: 600px;
+    margin-top: -600px;
+  }
+
+.testimonials p{
+  font-size: 1.75rem;
+}
+
+}
+
+
+
+.testimonials .swiper-slide .row{
+  display:  flex;
+}
+
+.swiper-container2{
+  overflow:  hidden;
+}
+
+.testimonials .swiper-pagination.swiper-pagination-bullets{
+  bottom:  0px;
+  top:  0px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination-bullet{
+  height:  20px;
+  width:  20px;
+  margin: 0 14px;
+}
+
+.testimonials .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 14px;
+}
+
+.testimonials .swiper-pagination-bullet-active{
+  background:  white;
+}
+
+.testimonials .swiper-slide .row .col.s6:nth-of-type(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials .swiper-slide .row .col.s6:nth-of-type(1) img{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.recentPosts .btn{
+  background-color: #f69915;
+}
+
+.recentPosts h2{
+    text-align: left;
+    font-family: AvenirNextUltraLight;
+    font-size: 2.5rem;
+}
+
+.recentPosts{
+  margin-bottom:  100px;
+}
+
+.placeHolder{
+  cursor:  pointer;
+  width:  235px;
+  height:  135px;
+  border-left:  10px solid #f69915;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  background: linear-gradient(180deg, rgba(10,61,98,0.8) 1%, rgba(10,61,98,0.5) 100%),url('https://beta.mathe.com/wp-content/themes/mathepub2/images/testimonialsBG.png');
+  background-size:  cover;
+}
+
+.recentPosts .placeHolder{
+  max-width:  100%;
+  margin-top:  calc( 0.75rem + 0.75rem);
+  transition:  all 0.3s;
+}
+
+.recentPosts .placeHolder:hover{
+  border-left-color: #167afe;
+}
+
+.featuredVideos .placeHolder{
+  border-left-color: #167afe;
+  position:  relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featuredVideos .placeHolder i{
+  font-size:  40px;
+  color:  white;
+  transition:  all 0.3s;
+}
+
+.featuredVideos .placeHolder:hover i{
+  color:  rgba(0,0,0,0.8);
+}

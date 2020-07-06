@@ -17,11 +17,33 @@ var attachActiveNavigationClass = function attachActiveNavigationClass() {
 };
 
 $(document).ready(function () {
-  console.info("MATHE-PUB v0.2");
+  console.info("MATHE-PUB v0.3");
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems, null);
-  var elems2 = document.querySelectorAll('.parallax');
-  var instances2 = M.Parallax.init(elems2, null);
+  // var elems2 = document.querySelectorAll('.parallax');
+  // var instances2 = M.Parallax.init(elems2, null);
   attachActiveNavigationClass();
   AOS.init();
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  var mySwiper = new Swiper('.swiper-container2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 });
