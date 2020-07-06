@@ -658,3 +658,45 @@ main {
 .featuredVideos .placeHolder:hover i{
   color:  rgba(0,0,0,0.8);
 }
+
+.arrow-container{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+}
+
+.arrow-2{
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  display: table;
+}
+
+.arrow-2::before{
+  width: 52px;
+  height: 52px;
+  content: "";
+  border: 2px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.arrow-2 i.fa{
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+

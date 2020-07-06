@@ -46,4 +46,17 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+  var scroll = $(window).scrollTop();
+  if(scroll > 0){
+      $('.arrow-container').addClass('animate__fadeOut');
+  }
+
+  $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if(scroll > 0){
+      $('.arrow-container').addClass('animate__fadeOut');
+    }else if(scroll === 0){
+      $('.arrow-container').removeClass('animate__fadeOut');
+    }
+  });
 });
