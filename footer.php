@@ -4,16 +4,16 @@
     	<div class="row">
     		<div class="col s6 m5 l2 offset-m1 offset-l2 flex-center">
     			<ul>
-    				<li><a href="about.html">About Us</a></li>
-    				<li><a href="contact.html">Contact</a></li>
+    				<li><a href="/about">About Us</a></li>
+    				<li><a href="/contact">Contact</a></li>
     				<li><a href="terms.html">Terms &amp; Conditions</a></li>
     			</ul>
     		</div>
     		<div class="col s6 m5 l2 flex-center">
     			<ul>
-    				<li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-    				<li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-    				<li><a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+    				<li><a href="https://www.facebook.com/Mathe-Inc-111802318882296/"><i class="fa fa-facebook"></i>Facebook</a></li>
+    				<li><a href="https://twitter.com/matheinc?lang=en"><i class="fa fa-twitter"></i>Twitter</a></li>
+    				<li><a href="https://www.linkedin.com/company/mathe-inc"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
     			</ul>
     		</div>
     		<div class="col s12 m5 l3 flex-center offset-m1">
@@ -35,9 +35,9 @@
             </div>
     		<div class="col s12 m5 l2 offset-m1 flex-center">
                 <div class="address">
-        			<span>181 New road, Suite 304</span><br/>
+        			<span>181 New Road, Suite 304</span><br/>
                     <span>Parsippany, NJ 07054</span><br/>
-        			<span><a href="tel:9733341700">(973)334-1700</a></span>
+        			<span><a href="tel:9733341700">(973)334-1700</a></span><br/>
         			<span><a href="mailto:support@mathe.com">support@mathe.com</a></span>
                 </div>
     		</div>

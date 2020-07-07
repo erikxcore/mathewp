@@ -1,28 +1,40 @@
 var attachActiveNavigationClass = function attachActiveNavigationClass() {
-  var location = window.location.pathname;
+  var loc = window.location.pathname;
 
-  if (location.indexOf('about') > -1) {
+  if (loc.indexOf('about') > -1) {
     document.querySelector('.link--about').classList.add('active');
-  } else if (location.indexOf('services') > -1) {
+    document.body.classList.add('about');
+  } else if (loc.indexOf('services') > -1) {
+    document.body.classList.add('services');
     document.querySelector('.link--services').classList.add('active');
-  } else if (location.indexOf('support') > -1) {
+  } else if (loc.indexOf('support') > -1) {
+    document.body.classList.add('support');
     document.querySelector('.link--support').classList.add('active');
-  } else if (location.indexOf('testimonials') > -1) {
+  } else if (loc.indexOf('testimonials') > -1) {
+    document.body.classList.add('testimonials');
     document.querySelector('.link--testimonials').classList.add('active');
-  } else if (location.indexOf('blog') > -1) {
+  } else if (loc.indexOf('blog') > -1) {
+    document.body.classList.add('blog');
     document.querySelector('.link--blog').classList.add('active');
-  } else if (location.indexOf('contact') > -1) {
+  } else if (loc.indexOf('contact') > -1) {
+    document.body.classList.add('contact');
     document.querySelector('.link--contact').classList.add('active');
+  } else if (loc.indexOf('resources') > -1) {
+    document.body.classList.add('resources');
+    document.querySelector('.link--resources').classList.add('active');
+  } else{
+    document.body.classList.add('homepage');
+    document.body.classList.remove('page');
   }
 };
 
 $(document).ready(function () {
-  console.info("MATHE-PUB v0.3");
+  attachActiveNavigationClass();
+  console.info("MATHE-PUB v0.4");
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems, null);
   // var elems2 = document.querySelectorAll('.parallax');
   // var instances2 = M.Parallax.init(elems2, null);
-  attachActiveNavigationClass();
   AOS.init();
   var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
@@ -59,4 +71,53 @@ $(document).ready(function () {
       $('.arrow-container').removeClass('animate__fadeOut');
     }
   });
+
+  $('#modal1').modal();
+  $('#modal2').modal();
+
+  $('.triggerModal1').on('click', function(){
+    $('#modal1').modal('open');
+  });
+
+  $('.triggerModal2').on('click', function(){
+    $('#modal2').modal('open');
+  });
+  
+  var loc = window.location.pathname;
+
+  if (loc.indexOf('support') > -1) { 
+    $('#modal3').modal();
+    $('#modal4').modal();
+
+    $('.triggerModal4').on('click', function(){
+      $('#modal3').modal('open');
+    });
+
+    $('.triggerModal3').on('click', function(){
+      $('#modal4').modal('open');
+    });
+  }
+
+  var options = {
+  strings: ['Healthcare', 'IT Services'],
+  typeSpeed: 80,
+  loop: true
+};
+
+  var typed = new Typed('.typer', options);
+
+  document.querySelector('[href="#cloud"]').addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector('#cloud').classList.remove('active');
+    document.querySelector('#itsupport').classList.remove('active');
+    document.querySelector('#cloud').classList.add('active');
+
+  });
+  document.querySelector('[href="#itservices"]').addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector('#cloud').classList.remove('active');
+    document.querySelector('#itsupport').classList.remove('active');
+    document.querySelector('#itsupport').classList.add('active');
+  });
+
 });
