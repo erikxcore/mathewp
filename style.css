@@ -294,7 +294,7 @@ main {
     width: 80%;
 }
 .footer .newsletter .input-wrapper input {
-    height: 2.72rem;
+    height: 41px;
     padding-left: 20px;
     margin-bottom: 0;
 
@@ -304,6 +304,9 @@ main {
     border: 1px solid white;
     border-right: 0;
     border-radius: 5px 0 0 5px;
+
+    border-bottom: 1px solid white !important;
+    box-shadow: none !important;
 }
 
 .footer .newsletter .input-wrapper input::placeholder {
@@ -315,7 +318,7 @@ main {
     width: 20%;
 }
 .footer .newsletter .btn-wrapper .btn {
-    height: 2.8rem;
+    height: 43px;
     padding: 3px 15px;
 
     font-family: AvenirNextRegular;
@@ -384,7 +387,8 @@ main {
 }
 
 .homepage .featuredVideos{
-    padding:  40px 0px;
+    padding:  0px 0px;
+    padding-bottom:  50px;
 }
 
 .homepage .ourPartners{
@@ -450,6 +454,7 @@ main {
 }
 .solutions-detail #itsupport .col.s6:nth-of-type(2){
     position:  relative;
+    padding-right:  0;
 }
 
 .solutions-detail #itsupport .col.s6:nth-of-type(1) {
@@ -460,6 +465,10 @@ main {
     border-right: .1rem solid white;
 
     justify-content: center;
+}
+
+#itsupport p, #itsupport h3{
+    padding-left: .65rem;
 }
 
 .afloat,.afloat2{
@@ -498,7 +507,37 @@ main {
     position: relative;
 }
 
-.solutions-detail #cloud .col.s6:nth-of-type(1)::before {
+.solutions-detail .container{
+    position:  relative;
+}
+
+.solutions-detail .indicator{
+    position: absolute;
+    top: -60px;
+
+    width: 30px;
+    height: 30px;
+
+    content: "";
+
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #55a3bf;
+    border-left: 15px solid transparent;
+    transition:  all 0.5s;
+    left:  0;
+    right:  0;
+    float:  none !important;
+}
+
+.indicator.left{
+    left: calc( 25% - 8px);
+}
+
+.indicator.right{
+    left: calc( 75% - 8px); 
+}
+
+/* .solutions-detail #cloud .col.s6:nth-of-type(1)::before {
     position: absolute;
     top: -60px;
     left: calc(50% - 15px);
@@ -526,7 +565,7 @@ main {
     border-right: 15px solid transparent;
     border-bottom: 30px solid #55a3bf;
     border-left: 15px solid transparent;
-}
+} */
 
 .whoarewedetails h1 {
     font-family: AvenirNextRegular;
@@ -535,6 +574,24 @@ main {
     text-align: center;
 
     color: #454545;
+/*     padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px; */
+}
+
+.whoarewedetails{
+    display:  flex;
+    flex-direction: column;
+    position:  relative;
+}
+
+.centerMe{
+/*     display:  flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center; */
+    top: 25%;
+    position:  absolute;
 }
 
 .whoarewedetails .btn {
@@ -559,10 +616,12 @@ main {
 .whoarewe {
     display: flex;
     min-width: 150vw;
-    min-height: 500px;
+    min-height: 600px;
     padding-left: 25vw;
     margin-right: 25vw;
     margin-left: -25vw;
+    padding-top:  50px;
+    padding-bottom:  50px;
 
     border-bottom: 30px solid #aedef5;
     border-bottom-right-radius: 70%;
@@ -576,8 +635,8 @@ main {
 }
 
 .whoarewedetails {
-    min-height: 500px;
-    margin-top: -500px;
+    min-height: 550px;
+    margin-top: -550px;
 }
 
 @media(min-width: 1200px) {
@@ -722,6 +781,10 @@ main {
     position: relative;
     top: 0;
     bottom: 0;
+}
+
+.testimonials .swiper-container2{
+    margin-top:  30px;
 }
 
 .testimonials .swiper-pagination-bullet {
@@ -992,7 +1055,7 @@ main {
 }
 
 .page.about .full-container{
-    padding: 40px 0px;
+    padding: 60px 0px;
 }
 
 .page.services h1{
@@ -1018,9 +1081,10 @@ main {
     text-align: center;
     margin:  0px;
     margin: 0px;
-    padding: 20px;
+    padding: 40px;
     line-height: 60px;
     margin-top: -10px;
+    pointer-events:  none;
 }
 
 .page.services .full-container.blue{
@@ -1115,7 +1179,7 @@ nav .sidenav-trigger{
 
 .page.support main .hero h2 {
     font-family: AvenirNextBold;
-
+    margin-top:  72px;
     color: white;
 }
 
@@ -1149,8 +1213,95 @@ nav .sidenav-trigger{
     padding: 100px 50px;
     border: 1px solid white;
     text-align: center;
+    margin-top:  100px !important;
+    margin-bottom:  100px !important;
 }
 
 .page.support .content p{
     color:  white;
 }
+
+nav{
+    transition:  all 0.3s;
+    border-bottom-color:  transparent !important;
+}
+
+nav.pinned{
+    z-index:  10;
+    background: linear-gradient(180deg, rgba(10,61,98,1) 0%, rgba(10,61,98,0.4) 100%) !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(10,61,98,1);
+}
+
+nav.pinned + ul + main{
+    padding-top:  80px;
+}
+
+.about nav.pinned, .services nav.pinned, .contact nav.pinned,.resources nav.pinned{
+    background:  white !important;
+    border-bottom-color: rgba(10,61,98,1) !important;
+}
+
+.pulse-container {
+  position: relative;
+  margin-top: -55px;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    border: 5px solid white;
+    border-radius: 600px;
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot img{
+    max-width:  100%;
+}
+
+.base-pulse{
+    background: transparent;
+    border-radius: 600px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -95px;
+    left: calc( 50% - 50px);
+    z-index: 1;
+    opacity: 0;
+    border: 1px solid white;
+}
+
+.pulse1 {
+   animation: pulse1 2s ease-out infinite;
+}
+.pulse2 {
+/*  animation: pulse1 2s ease-out infinite;
+  animation-delay: 500ms;*/
+}
+.pulse3 {
+  animation: pulse1 2s ease-out infinite;
+  animation-delay: 1000ms;
+}
+.pulse4 {
+/*  animation: pulse1 2s ease-out infinite;
+  animation-delay: 1500ms;*/
+}
+
+@-webkit-keyframes "pulse1" {
+    0%   {transform: scale(0.1, 0.1); opacity: 0.0;}
+    50%  {opacity: 1.0;}
+    100% {transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+.about main{
+    display:  flex;
+    justify-content: center;
+    align-items:  center;
+}
+

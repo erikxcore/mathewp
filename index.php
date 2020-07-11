@@ -24,6 +24,7 @@
     </div>
 	<div class="full-container solutions-detail">
 		<div class="container">
+			<div class="indicator left"></div>
 			<div class='row'>
 				<div id="cloud" class="active">
 					<div class="col s12 afloat">
@@ -65,18 +66,20 @@
 	<div class="full-container whoarewe">
 	</div>
 	<div class="container whoarewedetails">
-		<div class="row">
-			<div class="col s12">
-				<h1>Who Are We?</h1>
+			<div class="row">
+				<div class="col s12">
+					<h1>Who Are We?</h1>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col s7">
-				<img src="https://beta.mathe.com/wp-content/themes/mathepub2/matheLogos/matheLogoIsolated.png"/>
-			</div>
-			<div class="col s5">
-				<p>Started by professionals from the Enterprise space to bring Enterprise solutions to the SMB and SME at affordable rates. Launched in 1990, started a sister company for Business Continuity in 1995 that was rated in the top 3% of the industry, and took our first client to the cloud in 2000. Most of our clients are in regulated industries that need compliance and high availability.</p>
-				<a class="waves-effect waves-light btn">LEARN MORE</a>
+		<div class="centerMe">
+			<div class="row">
+				<div class="col s7">
+					<img src="https://beta.mathe.com/wp-content/themes/mathepub2/matheLogos/matheLogoIsolated.png"/>
+				</div>
+				<div class="col s5">
+					<p>Started by professionals from the Enterprise space to bring Enterprise solutions to the SMB and SME at affordable rates. Launched in 1990, started a sister company for Business Continuity in 1995 that was rated in the top 3% of the industry, and took our first client to the cloud in 2000. Most of our clients are in regulated industries that need compliance and high availability.</p>
+					<a class="waves-effect waves-light btn">LEARN MORE</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -102,13 +105,13 @@
 	 <!-- Modal Structure -->
 	  <div id="modal1" class="modal">
 	    <div class="modal-content">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/jugBQqE_2sM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/jugBQqE_2sM?controls=0&enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	    </div>
 	  </div>
 	 <!-- Modal Structure -->
 	  <div id="modal2" class="modal">
 	    <div class="modal-content">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/jugBQqE_2sM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/jugBQqE_2sM?controls=0&enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	    </div>
 	  </div>
 	<div class="full-container ourPartners">

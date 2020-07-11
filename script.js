@@ -36,6 +36,24 @@ $(document).ready(function () {
   // var elems2 = document.querySelectorAll('.parallax');
   // var instances2 = M.Parallax.init(elems2, null);
   AOS.init();
+
+  var pushpins = document.querySelectorAll(".pushpin-nav");
+  pushpins.forEach(function(element) {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var elemRect = element.getBoundingClientRect();
+    var parentRect = element.parentElement.getBoundingClientRect();
+    var elemTop = scrollTop + elemRect.top;
+    
+    // var instancePushpin = M.Pushpin.init(element, {
+    //   top: elemTop,
+    //   bottom: elemTop + parentRect.height - elemRect.height
+    // });
+     var instancePushpin = M.Pushpin.init(element, {
+      top: 1
+    });
+  })
+
+
   var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -77,6 +95,8 @@ $(document).ready(function () {
 
   $('.triggerModal1').on('click', function(){
     $('#modal1').modal('open');
+    // To stop Youtube:
+    // document.querySelector("#modal1 iframe").contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
   });
 
   $('.triggerModal2').on('click', function(){
@@ -98,6 +118,27 @@ $(document).ready(function () {
     });
   }
 
+    document.querySelector('[href="#cloud"]').addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector('#cloud').classList.remove('active');
+    document.querySelector('#itsupport').classList.remove('active');
+    document.querySelector('#cloud').classList.add('active');
+    document.querySelector('.indicator').classList.remove('right');
+    document.querySelector('.indicator').classList.remove('left');
+    document.querySelector('.indicator').classList.add('left');
+
+  });
+  document.querySelector('[href="#itservices"]').addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector('#cloud').classList.remove('active');
+    document.querySelector('#itsupport').classList.remove('active');
+    document.querySelector('#itsupport').classList.add('active');
+    document.querySelector('.indicator').classList.remove('right');
+    document.querySelector('.indicator').classList.remove('left');
+    document.querySelector('.indicator').classList.add('right');
+  });
+
+
   var options = {
   strings: ['Healthcare', 'IT Services'],
   typeSpeed: 80,
@@ -106,18 +147,6 @@ $(document).ready(function () {
 
   var typed = new Typed('.typer', options);
 
-  document.querySelector('[href="#cloud"]').addEventListener('click', function(e){
-    e.preventDefault();
-    document.querySelector('#cloud').classList.remove('active');
-    document.querySelector('#itsupport').classList.remove('active');
-    document.querySelector('#cloud').classList.add('active');
 
-  });
-  document.querySelector('[href="#itservices"]').addEventListener('click', function(e){
-    e.preventDefault();
-    document.querySelector('#cloud').classList.remove('active');
-    document.querySelector('#itsupport').classList.remove('active');
-    document.querySelector('#itsupport').classList.add('active');
-  });
 
 });
