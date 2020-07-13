@@ -2,7 +2,7 @@
 <?php get_sidebar(); ?>
 <div class="full-container">
 	<div class="hero">
-		<div class="content">
+		<div class="content heroText">
 			<h2>Proactive IT solutions, security, and support focused on <span class="typer"></span>.</h2>
 			<a class="waves-effect waves-light btn-large">LEARN MORE</a>
 			<div class="arrow-container animate__animated animate__fadeInDown">
@@ -73,10 +73,10 @@
 			</div>
 		<div class="centerMe">
 			<div class="row">
-				<div class="col s7">
+				<div class="col s12 m7">
 					<img src="https://beta.mathe.com/wp-content/themes/mathepub2/matheLogos/matheLogoIsolated.png"/>
 				</div>
-				<div class="col s5">
+				<div class="col s12 m5">
 					<p>Started by professionals from the Enterprise space to bring Enterprise solutions to the SMB and SME at affordable rates. Launched in 1990, started a sister company for Business Continuity in 1995 that was rated in the top 3% of the industry, and took our first client to the cloud in 2000. Most of our clients are in regulated industries that need compliance and high availability.</p>
 					<a class="waves-effect waves-light btn">LEARN MORE</a>
 				</div>
@@ -123,7 +123,7 @@
 			</div>
 			<div class="row">
 				<div class="col s12">
-					<div class="swiper-container">
+					<div class="swiper-container desktop">
 					    <div class="swiper-wrapper">
 					        <div class="swiper-slide">
 								<div class="row">
@@ -181,7 +181,40 @@
 					    <div class="swiper-button-prev"></div>
 					    <div class="swiper-button-next"></div>
 					</div>
-
+					<div class="swiper-container mobile">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide">
+								<div class="row">
+									<div class="col s12">
+										<img src="https://beta.mathe.com/wp-content/themes/mathepub2/partnerLogos/1200px-Hewlett_Packard_Enterprise_logo.svg.png"/>
+									</div>
+								</div>
+					        </div>
+					        <div class="swiper-slide">
+								<div class="row">
+									<div class="col s12">
+										<img src="https://beta.mathe.com/wp-content/themes/mathepub2/partnerLogos/365Logo.png"/>
+									</div>
+								</div>
+					        </div>
+					        <div class="swiper-slide">
+								<div class="row">
+									<div class="col s12">
+										<img src="https://beta.mathe.com/wp-content/themes/mathepub2/partnerLogos/citrixLogo.png"/>
+									</div>
+								</div>
+					        </div>
+					        <div class="swiper-slide">
+								<div class="row">
+									<div class="col s12">
+										<img src="https://beta.mathe.com/wp-content/themes/mathepub2/partnerLogos/solarwinds-inc-logo835x396.png"/>
+									</div>
+								</div>
+					        </div>
+					    </div>
+					    <div class="swiper-button-prev"></div>
+					    <div class="swiper-button-next"></div>
+					</div>
 				</div>
 			</div>
 		</div>
